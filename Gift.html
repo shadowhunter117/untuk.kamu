@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>gift for you</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+        }
+
+        #tom1, #tom2, #tom3, #tom4, #tom5 {
+            top: 450px;
+            width: 60px;
+            height: 30px;
+            position: absolute;
+            border-radius: 30px;
+            text-align: center;
+            margin: 0 auto;
+            background-color: black;
+            border: none;
+            border-bottom: 2px solid green;
+            border-right: 1px solid green;
+            box-shadow: 0 0 2em green;
+        }
+
+        #tom2, #tom3, #tom4, #tom5 {
+            display: none;
+        }
+
+        #pem1, #pem2, #pem3, #pem4, #pem5, #pem6 {
+            display: none;
+            overflow: hidden;
+            background-color: transparent;
+            top: 100px;
+            bottom: 150px;
+            font-weight: bold;
+            position: absolute;
+            white-space: nowrap;
+            font-size: 20px;
+            animation: tipe 3s linear;
+        }
+
+@keyframes tipe {
+            0% {
+                opacity: 0;
+                top: 100px;
+                width: 0px;
+            }
+            100% {
+                opacity: 1;
+                top: 100px;
+                width: 100%;
+            }
+        }
+
+        #pem2 {
+            animation: tipe2 2s linear;
+            top: 130px;
+        }
+
+@keyframes tipe2 {
+            0% {
+                opacity: 0;
+                top: 130px;
+                width: 0px;
+            }
+            100% {
+                opacity: 1;
+                top: 130px;
+                width: 250px;
+            }
+        }
+
+        #pem3 {
+            display: none;
+            animation: tipe3 5s linear;
+            animation-delay: 2s;
+            animation-fill-mode: forwards;
+            top: 160px;
+            opacity: 0;
+        }
+
+@keyframes tipe3 {
+            0% {
+                opacity: 0;
+                top: 160px;
+                width: 0px;
+            }
+            100% {
+                opacity: 1;
+                top: 160px;
+                width: 100%;
+            }
+        }
+        #pem4 {
+            display: none;
+            animation: tipe4 3s linear;
+            animation-delay: 7s;
+            animation-fill-mode: forwards;
+            top: 190px;
+            opacity: 0;
+            text-align: center;
+        }
+
+@keyframes tipe4 {
+            0% {
+                opacity: 0;
+                top: 190px;
+                width: 0px;
+            }
+            100% {
+                opacity: 1;
+                top: 190px;
+                width: 300px;
+            }
+        }
+
+        #tom2 {
+            display: none;
+            opacity: 0;
+            top: 5000px;
+            animation: btn 1s;
+            animation-delay: 10s;
+            animation-fill-mode: forwards;
+        }
+
+@keyframes btn {
+            0% {
+                opacity: 0;
+                top: 470px;
+            }
+            100% {
+                opacity: 1;
+                top: 450px;
+
+            }
+        }
+
+        #pem5 {
+            display: none;
+            animation: tipe5 3s linear;
+            top: 100px;
+            opacity: 1;
+            text-align: center;
+        }
+
+@keyframes tipe5 {
+            0% {
+                opacity: 0;
+                top: 100px;
+                width: 0px;
+            }
+            100% {
+                opacity: 1;
+                top: 100px;
+                width: 300px;
+            }
+        }
+
+        #pem6 {
+            display: none;
+            animation: tipe6 3s linear;
+            top: 160px;
+            opacity: 1;
+            text-align: center;
+        }
+
+@keyframes tipe6 {
+            0% {
+                opacity: 0;
+                top: 160px;
+                width: 0px;
+            }
+            100% {
+                opacity: 1;
+                top: 160px;
+                width: 300px;
+            }
+        }
+
+        #tom3 {
+            height: 50px;
+            width: 70px;
+            display: none;
+            opacity: 0;
+            left: 230px;
+            top: 250px;
+            animation: btn3 1s;
+            animation-fill-mode: forwards;
+        }
+
+@keyframes btn3 {
+            0% {
+                opacity: 0;
+                top: 270px;
+            }
+            100% {
+                opacity: 1;
+                top: 250px;
+
+            }
+        }
+
+        #tom4 {
+            height: 50px;
+            width: 70px;
+            display: none;
+            opacity: 0;
+            right: 230px;
+            top: 250px;
+            animation: btn4 1s;
+            animation-fill-mode: forwards;
+        }
+
+@keyframes btn4 {
+            0% {
+                opacity: 0;
+                top: 270px;
+            }
+            100% {
+                opacity: 1;
+                top: 250px;
+
+            }
+        }
+
+        #mintxt {
+            display: none;
+            overflow: hidden;
+            background-color: transparent;
+            top: 100px;
+            left: 50px;
+            opacity: 0;
+            font-weight: bold;
+            position: absolute;
+            white-space: nowrap;
+            font-size: 20px;
+            animation: dwn 1s;
+            animation-fill-mode: forwards;
+        }
+
+@keyframes dwn {
+            0% {
+                opacity: 0;
+                top: 270px;
+            }
+            100% {
+                opacity: 1;
+                top: 320px;
+            }
+        }
+
+        #mintxt1 {
+            display: none;
+            overflow: hidden;
+            background-color: transparent;
+            top: 100px;
+            left: 80px;
+            opacity: 0;
+            font-weight: bold;
+            position: absolute;
+            white-space: nowrap;
+            font-size: 20px;
+            animation: dwn1 1s;
+            animation-fill-mode: forwards;
+        }
+
+@keyframes dwn1 {
+            0% {
+                opacity: 0;
+                top: 270px;
+            }
+            100% {
+                opacity: 1;
+                top: 350px;
+            }
+        }
+
+        #mmt {
+            display: none;
+            overflow: hidden;
+            background-color: transparent;
+            top: 100px;
+            text-align: center;
+            opacity: 0;
+            font-weight: bold;
+            position: absolute;
+            white-space: nowrap;
+            font-size: 20px;
+            animation: mmt 1s;
+            animation-fill-mode: forwards;
+        }
+
+@keyframes mmt {
+            0% {
+                opacity: 0;
+                top: 270px;
+            }
+            100% {
+                opacity: 1;
+                top: 270px;
+            }
+        }
+
+        #mmt1, #mmt2, #mmt3, #mmt4 {
+            display: none;
+            overflow: hidden;
+            background-color: transparent;
+            top: 100px;
+            text-align: center;
+            opacity: 0;
+            font-weight: bold;
+            position: absolute;
+            white-space: nowrap;
+            font-size: 20px;
+        }
+
+        #mmt1 {
+            animation: mmt1 1s;
+            animation-delay: 2s;
+            animation-fill-mode: forwards;
+
+        }
+
+@keyframes mmt1 {
+            0% {
+                opacity: 0;
+                top: 290px;
+            }
+            100% {
+                opacity: 1;
+                top: 290px;
+            }
+        }
+
+        #mmt2 {
+            animation: mmt2 1s;
+            animation-delay: 4s;
+            animation-fill-mode: forwards;
+
+        }
+
+@keyframes mmt2 {
+            0% {
+                opacity: 0;
+                top: 310px;
+            }
+            100% {
+                opacity: 1;
+                top: 310px;
+            }
+        }
+
+        #mmt3 {
+            animation: mmt3 1s;
+            animation-delay: 6s;
+            animation-fill-mode: forwards;
+
+        }
+
+@keyframes mmt3 {
+            0% {
+                opacity: 0;
+                top: 330px;
+            }
+            100% {
+                opacity: 1;
+                top: 330px;
+            }
+        }
+
+        #mmt4 {
+            animation: mmt4 1s;
+            animation-delay: 8s;
+            animation-fill-mode: forwards;
+
+        }
+
+@keyframes mmt4 {
+            0% {
+                opacity: 0;
+                top: 330px;
+            }
+            100% {
+                opacity: 1;
+                top: 350px;
+            }
+        }
+
+        #tom5 {
+            height: 50px;
+            width: 70px;
+            display: none;
+            opacity: 0;
+            top: 2500px;
+            animation: btn5 1s;
+            animation-delay: 8s;
+            animation-fill-mode: forwards;
+        }
+
+@keyframes btn5 {
+            0% {
+                opacity: 0;
+                top: 470px;
+            }
+            100% {
+                opacity: 1;
+                top: 450px;
+            }
+        }
+        
+        #lst, #lst1, #lst2, #lst3 {
+            display: none;
+            background-color: transparent;
+            text-align: center;
+            opacity: 0;
+            font-weight: bold;
+            position: absolute;
+            white-space: nowrap;
+            font-size: 20px;
+        }
+        
+        #lst{
+            animation:ls 1s;
+            animation-fill-mode: forwards;
+        }
+        
+        @keyframes ls{
+            0%{
+                opacity:0;
+                top:80px;
+            }
+            100%{
+                opacity:1;
+                top:80px;
+            }
+        }
+
+        #lst1{
+            animation:ls1 1s;
+            animation-delay: 2s;
+            animation-fill-mode: forwards;
+        }
+        
+        @keyframes ls1{
+            0%{
+                opacity:0;
+                top:100px;
+            }
+            100%{
+                opacity:1;
+                top:100px;
+            }
+        }
+
+        #lst2{
+            animation:ls2 4s;
+            animation-fill-mode: forwards;
+        }
+        
+        @keyframes ls2{
+            0%{
+                opacity:0;
+                top:80px;
+            }
+            5%{
+                opacity:1;
+            }
+            90%{
+                opacity:1;
+            }
+            95%{
+                opacity:1;
+            }
+            100%{
+                opacity:0;
+                top:80px;
+            }
+        }
+
+        #lst3{
+            animation:ls3 6s;
+            animation-delay: 2s;
+            animation-fill-mode: forwards;
+        }
+        
+        @keyframes ls3{
+            0%{
+                opacity:0;
+                top:100px;
+            }
+            5%{
+                opacity:1;
+            }
+            90%{
+                opacity:1;
+            }
+            95%{
+                opacity:1;
+            }
+            100%{
+                opacity:0;
+                top:100px;
+            }
+        }
+        
+        #obj{
+            width:50px;
+            height:50px;
+            display:none;
+            margin:0 auto;
+            text-align:center;
+            border-radius:50px;
+            background-color:black;
+            box-shadow:0 0 2em green;
+            position:absolute;
+            top:350px;
+            opacity:0;
+            left:0px;
+            animation:obj 20s ;
+            animation-delay: 5s;
+            animation-fill-mode: forwards;
+        }
+        
+        @keyframes obj {
+            0%{
+                opacity:0;
+            }
+            5%{
+                opacity:1;
+            }
+            20%{
+                left:200px;
+                opacity:1;
+            }
+            30%{
+                left:150px;
+                opacity:1;
+            }
+            60%{
+                left:180px;
+                opacity:1;
+            }
+            100%{
+                left:-250px;
+                opacity:1;
+            }
+        }
+        
+        #obj2{
+            width:50px;
+            height:50px;
+            display:none;
+            margin:0 auto;
+            text-align:center;
+            border-radius:50px;
+            background-color:black;
+            box-shadow:0 0 2em pink;
+            position:absolute;
+            top:350px;
+            opacity:0;
+            left:40px;
+            animation:obj2 20s;
+            animation-delay:7s;
+            animation-fill-mode: forwards;
+        }
+        
+        @keyframes obj2{
+            0%{
+                opacity:0;
+                left:40px;
+            }
+            10%{
+                opacity:1;
+                left:40px;
+            }
+            25%{
+                left:40px;
+            }
+            30%{
+                left:120px;
+            }
+            60%{
+                left:130px;
+            }
+            90%{
+                opacity:1;
+            }
+            100%{
+                opacity:0;
+                left:-250px;
+            }
+        }
+        
+        #endtxt{
+            display: none;
+            background-color: transparent;
+            text-align: center;
+            opacity: 0;
+            font-weight: bold;
+            position: absolute;
+            white-space: nowrap;
+            font-size: 20px;
+            animation:en 3s linear;
+            animation-delay: 21s;
+            animation-fill-mode: forwards;
+        }
+        
+        @keyframes en {
+            0%{
+                opacity:0;
+            }
+            100%{
+                opacity:1;
+            }
+        }
+
+
+        </style>
+    </head>
+    <body>
+        <div id="pem1">
+            hai kamuu lama gak ketemu,apa kabar?
+        </div>
+        <div id="pem2">
+            kali ini aku cuma mau bilang
+        </div>
+        <div id="pem3">
+            aku cuek,bukan berarti aku gak<span style="color:red"> kangen;)</span>
+        </div>
+        <div id="pem4">
+            aku gak pernah ngechat,<p>
+                bukan berarti aku gak <span style="color:red"> pengen</span>
+            </p>
+        </div>
+        <div id="pem5">
+            <span style="color=red">alay</span>ya?<p>
+                tapi itu <span style="color:red"> faktanya</span>
+            </p>
+        </div>
+        <div id="pem6">
+            btw kamu <span style="color:red"> kangen juga</span> gak?
+        </div>
+        <div id="mintxt" style="color:red">
+            beneran??
+        </div>
+        <div id="mintxt1" style="color:red">
+            yaudah makasih yaa;(
+        </div>
+        <div id="mmt">
+            samaa,aku juga <span style="color:red">kangen</span>
+        </div>
+        <div id="mmt1">
+            tapi,aku <span style="color:red">sadar</span>
+        </div>
+        <div id="mmt2">
+            aku juga <span style="color:red">bukan siapa siapa</span>
+        </div>
+        <div id="mmt3">
+            tapi, <span style="color:red">yaudahlah</span>
+        </div>
+        <div id="mmt4">
+            udah  <span style="color:red"> jauh </span> juga
+        </div>
+        <!-- Tambahkan divs untuk pem3, pem4, pem5, dan pem6 sesuai kebutuhan -->
+        <button id="tom1" style="color: green">punch</button>
+        <button id="tom2" style="color: green">slap</button>
+        <button id="tom3" style="color: green">kangen banget</button>
+        <button id="tom4" style="color: green">dihh najiss</button>
+        <button id="tom5" style="color: green">kick</button>
+        
+        <div id="lst">yaudah,cuma gitu aja kok</div>
+        <div id="lst1">kamu yang <span style="color:red">baik</span> ya disana</div>
+        <div id="lst2">harus <span style="color:red">jaga diri</span> juga</div>
+        <div id="lst3">terakhir nih...</div>
+        <div id="obj">aku</div>
+        <div id="obj2">kamuu</div>
+        <div id="endtxt" style="color:red">;)</div>
+
+        <script>
+            var tom1 = document.getElementById("tom1");
+            var tom2 = document.getElementById("tom2");
+            var tom3 = document.getElementById("tom3");
+            var tom4 = document.getElementById("tom4");
+            var tom5 = document.getElementById("tom5");
+
+            var pem1 = document.getElementById("pem1");
+            var pem2 = document.getElementById("pem2");
+            var pem3 = document.getElementById("pem3");
+            var pem4 = document.getElementById("pem4");
+            var pem5 = document.getElementById("pem5");
+            var pem6 = document.getElementById("pem6");
+
+            // Tambahkan variabel untuk pem3, pem4, pem5, dan pem6 sesuai kebutuhan
+
+            tom1.addEventListener("click", function() {
+                if (!tom1.clicked) {
+                    tom2.style.display = "none";
+                    tom3.style.display = "none";
+
+                    pem1.style.display = "block";
+                    pem2.style.display = "none";
+                    pem3.style.display = "none";
+
+                    tom1.clicked = true;
+                } else {
+                    tom1.style.display = "none";
+                    pem2.style.display = "block";
+                    pem3.style.display = "block";
+                    pem4.style.display = "block";
+                    tom2.style.display = "block";
+                }
+            });
+
+            tom2.addEventListener("click",
+                function() {
+                    if (!tom2.clicked) {
+
+                        tom1.style.display = "none";
+                        pem1.style.display = "none";
+                        pem2.style.display = "none";
+                        pem3.style.display = "none";
+                        pem4.style.display = "none";
+                        pem5.style.display = "block";
+                        pem6.style.display = "none";
+
+                        tom2.clicked = true;
+
+                    } else {
+                        pem6.style.display = "block";
+                        pem5.style.display = "none";
+                        tom2.style.display = "none";
+                        tom3.style.display = "block";
+                        tom4.style.display = "block";
+                    }
+                });
+
+            tom4.addEventListener("click",
+                function() {
+                    if (!tom4.clicked) {
+
+                        mintxt.style.display = "block";
+                        tom4.clicked = true;
+
+                    } else {
+
+                        mintxt1.style.display = "block";
+                        tom3.style.display = "none";
+                        tom4.style.display = "none";
+                        mintxt.style.display = "none";
+                        pem6.style.display = "none";
+                    }
+                });
+
+            tom3.addEventListener("click",
+                function() {
+                    if (!tom3.clicked) {
+
+                        mmt.style.display = "block";
+                        tom3.style.display = "none";
+                        tom4.style.display = "none";
+                        mintxt.style.display = "none";
+                        pem6.style.display = "none";
+                        mmt1.style.display = "block";
+                        mmt2.style.display = "block";
+                        mmt3.style.display = "block";
+                        tom5.style.display ="none";
+                        mmt4.style.display ="block";
+                        tom5.style.display ="block";
+                        
+                    }
+                });
+                
+            tom5.addEventListener("click",function () {
+                
+                if (!tom5.clicked) {
+
+                    mmt.style.display ="none";
+                    mmt1.style.display ="none";
+                    mmt2.style.display ="none";
+                    mmt3.style.display ="none";
+                    mmt4.style.display ="none";
+                    lst.style.display ="block";
+                    lst1.style.display ="block";
+                    
+                    tom5.clicked =true;
+
+                } else{
+
+                    lst.style.display ="none";
+                    lst1.style.display ="none";
+                    lst2.style.display ="block";
+                    lst3.style.display ="block";
+                    tom5.style.display ="none";
+                    obj.style.display ="block";
+                    obj2.style.display ="block";
+                    endtxt.style.display ="block";
+                }
+            });
+        </script>
+    </body>
+</html>
